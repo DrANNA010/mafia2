@@ -25,42 +25,103 @@ src="https://www.facebook.com/tr?id=1474533901202826&ev=PageView&noscript=1"
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
-body{background:#0a0a0a;display:flex;justify-content:center}
-.page{width:100%;max-width:390px;background:#0a0a0a;padding:22px 16px;min-height:100vh}
-.logo{text-align:center;font-size:46px;font-weight:900} .logo span{color:#3b82ff}
-.hero{text-align:center;margin-top:20px} .hero h2{font-size:23px;font-weight:800} .hero p{color:#8a9bb8;font-size:14px;margin-top:8px}
-.stats{display:flex;gap:8px;margin-top:20px}
-.stat{flex:1;background:#15151c;border:1px solid #222230;border-radius:14px;padding:12px 4px;text-align:center}
-.stat b{display:block;font-size:22px} .stat span{font-size:11px;color:#8a9bb8}
-.features{margin-top:22px} .features h3{font-size:18px;font-weight:800;margin-bottom:12px}
-.card{display:flex;gap:12px;align-items:center;background:#15151c;border:1px solid #222230;border-radius:14px;padding:14px 12px;margin-bottom:10px}
-.card b{font-size:14px} .card span{font-size:11.5px;color:#8a9bb8;display:block;margin-top:2px}
-.btn{display:block;width:100%;margin-top:20px;background:#2874ff;color:#fff;text-align:center;padding:16px 0;border-radius:14px;font-size:19px;font-weight:800;text-decoration:none}
+body{background:#07070a;display:flex;justify-content:center;color:#fff}
+.page{width:100%;max-width:390px;background:#07070a;min-height:100vh;padding-bottom:95px}
+.top{position:sticky;top:0;z-index:20;background:#0f1730;border-bottom:1px solid #1e2d5a;display:flex;justify-content:space-between;padding:9px 12px;font-size:11px;color:#6c8ee0;font-weight:700}
+.dot{width:7px;height:7px;background:#ff2a2a;border-radius:50%;display:inline-block;animation:blink 1s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+.head{text-align:center;padding:18px 16px;background:radial-gradient(500px at 50% 0%, #1a2d6a 0%, #07070a 75%)}
+.logo{font-size:42px;font-weight:900;letter-spacing:-1px}
+.logo span{color:#3b82ff}
+.head h1{font-size:22px;margin-top:8px;line-height:24px}
+.head p{color:#8ea0c2;font-size:12.5px;margin-top:6px}
+.live{margin:12px 16px;background:#111c3a;border:1px solid #22346a;border-radius:12px;padding:10px 12px;display:flex;align-items:center;gap:10px}
+.live img{width:34px;height:34px;border-radius:50%}
+.stats{display:flex;gap:10px;padding:14px 16px}
+.stat{flex:1;background:#15151c;border:1px solid #24243a;border-radius:14px;padding:12px 4px;text-align:center}
+.stat b{font-size:20px;display:block;color:#3b82ff}
+.stat span{font-size:10px;color:#8a9bb8}
+.section{padding:0 16px}
+.section h3{font-size:11px;letter-spacing:1.5px;color:#5b6b8e;margin:14px 0 10px}
+.card{background:#15151c;border:1px solid #24243a;border-radius:13px;padding:13px;display:flex;gap:12px;margin-bottom:10px}
+.icon{width:38px;height:38px;background:#1e233a;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.card b{font-size:13px} .card span{font-size:11px;color:#8a9bb8;display:block;margin-top:2px}
+.testi{margin:14px 16px;background:#11162a;border:1px dashed #2a3a64;border-radius:12px;padding:12px;display:flex;gap:10px}
+.testi p{font-size:11.5px;color:#aab8d4;line-height:15px}
+.urgent{margin:16px;background:#1a1420;border:1px solid #3a2530;border-radius:12px;padding:12px}
+.urgent b{color:#ff4b4b}
+.timer{display:flex;gap:8px;margin-top:8px}
+.timer div{flex:1;background:#0f142a;border:1px solid #22346a;border-radius:8px;padding:6px;text-align:center}
+.timer div b{font-size:18px;color:#fff;display:block} .timer div span{font-size:9px;color:#6c8ee0}
+.cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:390px;background:linear-gradient(180deg,transparent,#07070a 25%);padding:12px 16px 14px}
+.btn{width:100%;background:linear-gradient(180deg,#3b82ff,#1d5cff);color:#fff;text-align:center;padding:17px 0;border-radius:14px;font-size:19px;font-weight:900;text-decoration:none;display:block;box-shadow:0 10px 30px #2a5bff77;animation:pulse 1.6s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+.btn small{display:block;font-size:10px;font-weight:600;opacity:0.8}
 </style>
 </head>
 <body>
 <div class="page">
-  <div class="logo">TM<span>💙</span></div>
-  <div class="hero">
-    <h2>Cricket Premium Community</h2>
-    <p>Join the most elite cricket community</p>
-  </div>
-  <div class="stats">
-    <div class="stat">🏟️<b>85K+</b><span>Fans</span></div>
-    <div class="stat">🕒<b>24/7</b><span>Updates</span></div>
-    <div class="stat">📊<b>97%</b><span>Engagement</span></div>
-  </div>
-  <div class="features">
-    <h3>Premium Features</h3>
-    <div class="card"><div>📶</div><div><b>Live Cricket Updates</b><span>Real-time scores & match highlights</span></div></div>
-    <div class="card"><div>🛡️</div><div><b>TM Exclusive Community</b><span>Private chat with pro cricket fans</span></div></div>
-    <div class="card"><div>🏅</div><div><b>TM Army</b><span>Get exclusive tips & insider news</span></div></div>
-  </div>
-  <a id="joinBtn" class="btn" href="https://t.me/+GV8OS92MkCFhYzI1" target="_blank">JOIN NOW</a>
+<div class="top"><span><span class="dot"></span> LIVE NOW • IND vs AUS</span><span>🔥 2341 JOINED TODAY</span></div>
+
+<div class="head">
+<div class="logo">TM💙 TM PREMIUM</div>
+<h1>Cricket Premium Community</h1>
+<p>India's most active cricket family - 85K+ fans</p>
 </div>
+
+<div class="live">
+<img src="https://i.pravatar.cc/100?img=5">
+<div><b id="liveName">Priya just joined</b><span style="font-size:11px;color:#8aa0c2">2 seconds ago • Joined Premium</span></div>
+<div style="margin-left:auto;color:#00ff88;font-size:11px">● LIVE</div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>125K+</b><span>Live Users</span></div>
+<div class="stat"><b>92%</b><span>Win Rate</span></div>
+<div class="stat"><b>4.9★</b><span>App Rating</span></div>
+</div>
+
+<div class="section">
+<h3>WHY GO PREMIUM</h3>
+<div class="card"><div class="icon">✅</div><div><b>Ad-Free Experience</b><span>Enjoy uninterrupted live matches & stats</span></div></div>
+<div class="card"><div class="icon">⚡</div><div><b>Pro Match Predictions</b><span>AI-powered predictions & expert analysis</span></div></div>
+<div class="card"><div class="icon">📊</div><div><b>Exclusive Analytics</b><span>Deep insights, player stats & breakdowns</span></div></div>
+</div>
+
+<div class="testi"><div>💬</div><p><b>Rohit S.:</b> "Best cricket insights! The predictions are incredibly accurate and helped me win my fantasy league." <span style="color:#00ff88">★★★★★</span></p></div>
+
+<div class="urgent">
+<b>⚠️ Only 23 spots left</b><span style="display:block;font-size:11px;color:#8aa0c2;margin-top:2px">Offer ends in</span>
+<div class="timer">
+<div><b id="h">02</b><span>HRS</span></div>
+<div><b id="m">14</b><span>MINS</span></div>
+<div><b id="s">36</b><span>SECS</span></div>
+</div>
+</div>
+
+<div class="cta">
+<a id="joinBtn" class="btn" href="https://t.me/+GV8OS92MkCFhYzI1" target="_blank">🔒 JOIN NOW<small>⏰ Link expires soon - Instant Access</small></a>
+</div>
+</div>
+
 <script>
-document.getElementById('joinBtn').addEventListener('click', function(){
-  try{ fbq('track', 'Lead'); fbq('track', 'Subscribe'); fbq('track', 'CompleteRegistration'); }catch(e){}
+// Countdown
+let sec=2*3600+14*60+36;
+setInterval(()=>{
+sec--;let h=Math.floor(sec/3600);let m=Math.floor((sec%3600)/60);let s=sec%60;
+document.getElementById('h').innerText=String(h).padStart(2,'0');
+document.getElementById('m').innerText=String(m).padStart(2,'0');
+document.getElementById('s').innerText=String(s).padStart(2,'0');
+},1000);
+
+// Fake live joins
+const names=["Priya just joined","Rahul from Delhi joined","Aman from Mumbai joined","Virat from Pune joined","Neha just joined"];
+let i=0;
+setInterval(()=>{i=(i+1)%names.length;document.getElementById('liveName').innerText=names[i]},3000);
+
+// Pixel Events
+document.getElementById('joinBtn').addEventListener('click', ()=>{
+ try{ fbq('track','Lead'); fbq('track','Subscribe'); fbq('track','CompleteRegistration'); }catch(e){}
 });
 </script>
 </body>
